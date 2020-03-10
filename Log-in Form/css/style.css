@@ -1,0 +1,168 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+.video-container video{ 
+    position: absolute;
+    top: 0px;
+    left:0px;
+    width: 100%;
+}
+
+  .login-form{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 300px;
+  padding: 60px 40px;
+  background-color:rgba(225, 225, 225,.8) ;
+  box-shadow: 0px 15px 20px ;
+}
+
+.login-form h2{
+    text-align: center;
+    padding: 0px;
+    margin: 0px 0px 41px;
+}
+
+.login-form .input-form{
+    position: relative;
+    margin: 20px 0px;
+}
+
+.login-form .input-form input{
+    height: 40px;
+    width: 100%;
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,.5);
+    background-color: transparent;
+    font-size: 18px;
+    padding: 10px
+}
+
+.login-form .input-form input[type="submit"]{
+    background-color: #e91e63;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.login-form .input-form input[type="submit"]:hover{
+    background-color: #0090ff;
+}
+
+.login-form .forget{
+    display: block;
+    margin-top: 30px;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}  
+
+/* contact us form---------------------- */
+
+
+.contact-form{
+    position: absolute;
+    top: 50%;
+    left:-430px;
+    transform: translateY(-50%);
+    width: 350px;
+    padding: 40px;
+    background-color:rgba(225, 225, 225,.8) ;
+    box-shadow: 0px 15px 20px ;
+    transition: 0.5s
+}
+.contact-form.active{
+    left: 0;
+}
+
+.contact-form h2{
+    text-align: center;
+    padding: 0px;
+    margin: 0px 0px 25px;
+}
+
+.contact-form .input-contact{
+    position: relative;
+    margin: 20px 0px;
+}
+
+.contact-form .input-contact input{
+    height: 40px;
+    width: 100%;
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,.5);
+    background-color: transparent;
+    font-size: 18px;
+    padding: 10px
+}
+
+.contact-form .input-contact textarea{
+    height: 80px;
+    width: 100%;
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,.5);
+    background-color: transparent;
+    font-size: 18px;
+    padding: 10px
+}
+
+.contact-form .input-contact input[type="submit"]{
+    background-color: #e91e63;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.toggle{
+    background-color: #e91e63;
+    position: absolute;
+    width: 60px;
+    height: 46px;
+    line-height: 60px;
+    top: 0px;
+    right: -60px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.toggle .far{
+    color:#fff;
+    font-size: 46px;
+}
+
+
+.toggle.active i.far.fa-envelope{
+    display: none;
+}
+
+.toggle  i.fas.fa-times{
+    display: none;
+}
+
+.toggle.active i.fas.fa-times{
+    display: block;
+    color:#fff;
+    font-size: 46px;
+}
+
+
+ 
+
+
+
+
+
+
+

@@ -1,0 +1,171 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    background-color: #20024a !important; 
+}
+ img{
+    height: 250px;
+    width: 251px;
+} 
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1000px;
+    height: 500;
+    display: flex;
+    flex-direction: row;
+}
+
+.container .box{
+    position: relative;
+    width: 250px;
+    height: 500px;
+    background-color: #ccc;
+    transition: 0.5s;
+}
+
+.container .box .thumb{
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+.container .box .thumb:hover{
+    z-index: 1;
+    transform: scale(1.05);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 1)
+}
+
+.container .box:nth-child(odd) .thumb{
+    bottom: 0;
+    left: 0;
+}
+
+.container .box .detials{
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background-color: #262626;
+
+}
+
+.container .box .detials:hover{
+    z-index: 1;
+    transform: scale(1.05);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 1)
+}
+
+.container .box:nth-child(even) .detials{
+    bottom: 0;
+    left: 0;
+}
+
+.container .box:nth-child(1) .detials{
+    background-color: #8553cb;
+}
+
+.container .box:nth-child(2) .detials{
+    background-color: #fe8f01;
+}
+
+.container .box:nth-child(3) .detials{
+    background-color: #79d400;
+}
+
+.container .box:nth-child(4) .detials{
+    background-color: #ff3b34;
+}
+
+.container .box .detials .content{
+    position: absolute;
+    top: calc(10% + 7%);
+    transform: translatex(79%);
+    box-sizing: border-box;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.container .box:hover .detials .content{
+    top: calc(10%);
+}
+
+.container .box .detials .content .fas{
+    font-size: 80px;
+    color:#fff;
+}
+
+.container .box .detials .content h3 {
+    margin: 0px;
+    padding: 12px 0px;
+    color:#fff;
+}
+
+.container .box .detials .content a {
+    display: inline;
+    padding: 8px;
+    border: 2px #fff solid;
+    color:#fff;
+    text-decoration: none;
+    transition: 0.5s;
+    border-radius: 20px;
+    transform : scale(0);
+
+}
+.container .box:hover .detials .content a {
+    transform : scale(1); 
+}
+
+.container .box .detials .content a:hover {
+    background-color: #fff;
+    color:#262626;
+}
+
+
+@media (max-width:1100px){
+    .container{
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    .container .box{
+        height: 250px;
+    }
+
+    .container .box .thumb{
+        display: none;
+    }
+}
+
+@media (max-width:993px){
+    .container{
+     display: initial;
+    }
+
+    .container .box{
+        width: 50%;
+        float: left;
+    }
+}
+
+@media (max-width:500px){
+    .container{
+    top: 0px;
+    left: 0px;
+    transform: translate(0);
+    }
+
+    .container .box{
+        width: 100%;
+        float: none;
+    }
+
+    .container .box .detials .content{
+        transform: translatex(177%);
+    }
+}
