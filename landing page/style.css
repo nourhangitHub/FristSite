@@ -1,0 +1,77 @@
+body{
+    overflow-x: hidden;
+}
+.jumbotron{
+    background-image: url(../media/images/img_hero.jpg);
+    height: 505px;
+}
+
+.center{
+    text-align: center;
+    padding-top: 80px;
+    font-size: 90px;
+    font-weight: 500;
+}
+.image-container{
+    position: relative;
+    bottom: 134px;
+    left: 110px;
+    padding-left: 180px;
+}
+ .header{
+    border-radius: 50%;
+    margin-right: 70px;
+}
+
+.content{
+    position: relative;
+    bottom: 70px;
+  text-align: center;
+  width: 50%;
+  margin-left: 22%;
+  margin-right: 22%;
+  overflow: hidden;
+}
+
+.title-content{
+    color: #ffd905;
+    padding-bottom: 40px;
+}
+.team{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 360px;
+    overflow: hidden;
+}
+.person{
+    padding-left: 50px;  
+}
+
+.image-team{
+    height: 100px;
+    border-radius: 50%;
+    padding-right: 15px
+}
+.team-title{
+    color: #ffd905;
+}
+
+footer{
+    background-color: #494747;
+    border-top: 8px solid #ffd905;
+    margin-top: 41px;
+}
+.font-weight-bold{
+    color: #ffd905;
+    padding-top: 15px; 
+}
+
+ul li a{
+    color:#d1caca;
+}
+ul li a:hover{
+    text-decoration: none;
+    color:#d1caca;
+}
+
